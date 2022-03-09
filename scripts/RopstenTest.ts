@@ -67,9 +67,6 @@ async function MaticBalance() {
 
   const balAfter = await maticBalances.balanceOf(address);
   console.log(`balance after rigging is ${balAfter}`);
-
-  //await DAI.connect(signer).transfer(randAddress, '6229250710691401220343')
-  //await  provider.getStorageAt()
 }
 
 MaticBalance().catch((error) => {
