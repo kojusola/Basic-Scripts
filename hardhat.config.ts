@@ -30,7 +30,12 @@ const config: HardhatUserConfig = {
         url: "https://speedy-nodes-nyc.moralis.io/294492a5fe6a64b272f91b7d/eth/mainnet/archive",
       },
     },
-    ropsten: {
+    // ropsten: {
+    //   url: process.env.ROPSTEN_URL || "",
+    //   accounts:
+    //     process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    // },
+    rinkeby: {
       url: process.env.ROPSTEN_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
